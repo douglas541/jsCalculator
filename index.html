@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="calculator container">
+            <div class="display">
+                <span class="operation"></span>
+                <div class="operations">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button class="btn actionbtn" onclick="clearAction()">C</button>
+                <button class="btn actionbtn" onclick="operatorAction('%')">%</button>
+                <button class="btn actionbtn" onclick="operatorAction('/')">/</button>
+                <button class="btn actionbtn" onclick="operatorAction('x')">x</button>
+                <button class="btn" onclick="buttonAction('7')">7</button>
+                <button class="btn" onclick="buttonAction('8')">8</button>
+                <button class="btn" onclick="buttonAction('9')">9</button>
+                <button class="btn actionbtn" onclick="operatorAction('-')">-</button>
+                <button class="btn" onclick="buttonAction('4')">4</button>
+                <button class="btn" onclick="buttonAction('5')">5</button>
+                <button class="btn" onclick="buttonAction('6')">6</button>
+                <button class="btn actionbtn" onclick="operatorAction('+')">+</button>
+                <button class="btn" onclick="buttonAction('1')">1</button>
+                <button class="btn" onclick="buttonAction('2')">2</button>
+                <button class="btn" onclick="buttonAction('3')">3</button>
+                <button class="btn actionbtn equals" onclick="equalsAction()">=</button>
+                <button class="btn" onclick="buttonAction('0')">0</button>
+                <button class="btn actionbtn" onclick=" buttonAction('.')">.</button>
+                <button class="btn actionbtn">
+                    <img src="/assets/clear-icon.svg" alt="clear" srcset="">
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="src.js"></script>
+</body>
+</html>
